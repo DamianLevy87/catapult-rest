@@ -4,6 +4,47 @@ All notable changes to this project will be documented in this file.
 
 The changelog format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [v2.3.6] - 24-May-2021
+
+### Added
+
+- Tokenomics endpoints.
+- Symbol-bootstrap version in server version endpoints. This requires node operator to update rest.json configuration file with the correct bootstrap version details.
+
+### Fixed
+
+- Fixed zero median network transaction fee issue
+
+## [v2.3.5] - 13-Mar-2021
+
+### Updated
+
+- Updated catapult-server (v1.0.0.0) status codes.
+
+## [v2.3.4] - 5-Mar-2021
+
+### Fixed
+
+- Account endpoint pagination issue.
+
+### Added
+
+- Max zmq socket connection cap.
+
+## [v2.3.3] - 15-Feb-2021
+
+### Fixed
+
+- Fixed duplicate alias names returned from namespace endpoint issue.
+- Fixed duplicated status results. The status is now retrieved by priority.
+
+### Changed
+
+- Set default connection pool size to 10.
+- Changed `node/storage` endpoint to use estimated counts from mongo collections.
+- Allow all transaction groups to be queried by cosigners.
+- Allow address aliases in web socket listener subscriptions.
+
 ## [v2.3.2] - 02-Feb-2021
 
 ### Added
